@@ -10,3 +10,6 @@
 ##  Preview
 
 ![calculator](images/calculator.png)
+
+![calculator](images/calculator2.png)
+
