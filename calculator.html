@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CALCULATOR</title>
+   <link rel="stylesheet" href="calculator.css">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="main-container">
+      <div class="left"></div>
+      <div class="central">
+         <div class="calculator"> 
+            <div class="display">
+               <p id="top-copy"></p>
+               <textarea name="" id="display" cols="30" rows="1" placeholder="0"></textarea>
+            </div>
+            <div class="clear"><button id="clear" onclick="onClear()">AC</button></div>           
+
+            <div class="divide"><button id="divide" onclick="buttonTexts('divide')">/</button></div>
+           
+            <div class="multiply"><button id="multiply" onclick="buttonTexts('multiply')">*</button></div>
+            <div class="seven"><button id="seven" onclick="buttonTexts('seven')">7</button></div>
+            <div class="eight"><button id="eight" onclick="buttonTexts('eight')">8</button></div>
+            <div class="nine"> <button id="nine" onclick="buttonTexts('nine')">9</button></div>
+            <div class="subtract"> <button id="subtract" onclick="buttonTexts('subtract')">-</button></div>
+            <div class="four"> <button id="four" onclick="buttonTexts('four')">4</button></div>
+            <div class="five"> <button id="five" onclick="buttonTexts('five')">5</button></div>
+            <div class="six"> <button id="six" onclick="buttonTexts('six')">6</button></div>
+            <div class="add"> <button id="add" onclick="buttonTexts('add')">+</button></div>
+            <div class="one"> <button id="one" onclick="buttonTexts('one')">1</button></div>
+            <div class="two"> <button id="two" onclick="buttonTexts('two')">2</button></div>
+            <div class="three"> <button id="three" onclick="buttonTexts('three')">3</button></div>
+           
+            <div class="equals"><button id="equals" onclick="calcResult()">=</button></div>
+            <div class="zero"> <button id="zero" onclick="buttonTexts('zero')">0</button></div>
+           
+            <div> <button id="decimal" onclick="buttonTexts('decimal')">.</button></div>
+
+         </div>
+      </div>
+      <div class="right"></div>
+   </div>
+   <script src="calculator.js"></script>
+</body>
+</html>
